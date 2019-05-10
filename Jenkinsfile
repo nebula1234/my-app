@@ -9,7 +9,7 @@
    }
    stage('Slack Notification'){
        slackSend baseUrl: 'https://nebbb.slack.com/services/',
-       channel: '#jenk-ci',
+       channel: 'jenk-ci',
        color: 'good', 
        message: 'welcome to jenkins slack', 
        teamDomain: 'nebbb',
