@@ -8,8 +8,8 @@
       sh "${mvnHome}/bin/mvn package"
    }
    /*stage('Slack Notification'){
-       slackSend baseUrl: 'https://nebbb.slack.com/services/',
-       channel: 'jenkinsci',
+       slackSend baseUrl: 'https://hooks.slack.com/services/',
+       channel: '#jenkinsci',
        color: 'good', 
        message: 'welcome to jenkins slack', 
        teamDomain: 'nebbb',
