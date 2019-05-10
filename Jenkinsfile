@@ -7,14 +7,14 @@
       def mvnHome =  tool name: 'maven', type: 'maven'   
       sh "${mvnHome}/bin/mvn package"
    }
-   /*stage('Slack Notification'){
+   stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/',
        channel: '#jenkinsci',
        color: 'good', 
        message: 'welcome to jenkins slack', 
        teamDomain: 'nebbb',
        tokenCredentialId: 'slacknotify'
-   } */
+   } 
     
 
   }
