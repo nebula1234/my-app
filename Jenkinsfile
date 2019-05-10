@@ -4,7 +4,8 @@
    }
    stage('Compile-Package'){
     
-      def mvnHome =  tool name: 'maven', type: 'maven'   
+     slackSend "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)" 
+     def mvnHome =  tool name: 'maven', type: 'maven'   
       sh "${mvnHome}/bin/mvn package"
    }
   
