@@ -13,12 +13,12 @@
       Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'hari.kammana@gmail.com'
    }
    stage('Slack Notification'){
-       slackSend baseUrl: 'https://hooks.slack.com/services/',
-       channel: '#jenkins-pipeline-demo',
+       slackSend baseUrl: 'https://nebbb.slack.com/services/',
+       channel: '#jenk-ci',
        color: 'good', 
-       message: 'Welcome to Jenkins, Slack!', 
-       teamDomain: 'javahomecloud',
-       tokenCredentialId: 'slack-demo'
+       message: 'welcome to jenkins slack', 
+       teamDomain: 'nebbb',
+       tokenCredentialId: 'slack'
    }
 }
 
