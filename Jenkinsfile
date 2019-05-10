@@ -13,7 +13,7 @@
        color: 'good', 
        message: 'welcome to jenkins slack', 
        teamDomain: 'nebbb',
-       tokenCredentialId: 'slack'
+       tokenCredentialId: 'slack1'
    }
 }
 
